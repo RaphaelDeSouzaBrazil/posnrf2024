@@ -4,17 +4,54 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body, html {
+body {
     text-align: center;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+    padding: 0; 
+    scroll-behavior: smooth;
+}
+
+div#corpointeiro{
+    background-image: url('../img/esse.png');
 }
 
 h1{
     font-size: 1.3em;
+    color: #8c8c8c;
+}
+
+h1#txtcincomilhoes{
+    font-size: 1.7em;
+}
+
+h1#txtcincomilhoes{
+    margin-left: 10px;
+}
+
+span{
+    color: #8c8c8c;
+}
+
+.social{
+    color: #000000;
+    text-decoration: none !important;
+}
+
+h1#hhumheader{
+    width: 90%;
+    position: absolute;
+    color: #ffffff;
+    margin-top:290px !important;
+    margin-left: 7.9%;
+    font-family: 'Roboto Bold', sans-serif;
+    line-height: 1.3;
+    background-color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+        
 }
 
 .primeirotexto {
@@ -22,14 +59,20 @@ h1{
     font-family: 'Roboto Regular', sans-serif;
     color: #8c8c8c;
     font-size: 1.8em;
-    padding: 10px;
+    padding: 40px;
 }
 .textosecundario {
     text-align: center;
     font-family: 'Roboto Thin', sans-serif;
     color: #8c8c8c;
-    font-size: 1.7em;
-    padding: 10px;
+    font-size: 1.4em;
+    padding: 20px;
+}
+
+p#respostaAPI{
+    margin-top: 0px;
+    font-size: 1.6em;
+    padding: 0px;
 }
 
 div#contadorbignumbers{
@@ -37,12 +80,9 @@ div#contadorbignumbers{
     height: 300px;
 }
 
-div#footersupertroco{
-    height: 450px;
-}
 
 i{
-    font-size: 2.5em;
+    font-size: 2.5em;    
 }
 
 ul{
@@ -51,13 +91,88 @@ ul{
     text-align: left;
 }
 
+.verde{
+    color: #31bf60;
+}
+
 .ptextolegal{
-    margin-top: 50px;
+    margin-top: 5px;
     color: #8c8c8c;
     font-size: 1.1em;
     padding: 20px;
 }
 
+.ptextolegalhum{
+    margin-top: 25px;
+    color: #8c8c8c;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+div#fundopreto{
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+@media(min-width:767px){
+    h1#hhumheader {
+        width: 90%;
+        position: absolute;
+        color: #ffffff;
+        margin-top: 290px !important;
+        margin-left: 1.9%;
+        font-family: 'Roboto Bold', sans-serif;
+        line-height: 1.3;
+        background-color: #000000;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width: 412px){
+    h1#hhumheader{
+        font-size: 1.4em;
+        margin-top: 360px !important;
+       }
+        .primeirotexto {
+        text-align: center;
+        font-family: 'Roboto Regular', sans-serif;
+        color: #8c8c8c;
+        font-size: 1.35em;
+        padding: 40px;
+    }
+
+  
+}
+
+@media(max-width: 390px){
+    .primeirotexto {
+        text-align: center;
+        font-family: 'Roboto Regular', sans-serif;
+        color: #8c8c8c;
+        font-size: 1.4em;
+        padding: 40px;
+    }
+
+    h1#hhumheader{
+     font-size: 1.5em;
+     margin-top: 360px !important;
+    }
+
+    strong{
+        font-size: 0.86em !important;
+        margin-left: 10px;
+    }
+
+  
+} 
+
+@media(max-width: 360px){
+    h1#hhumheader{
+        font-size: 1.2em;
+        margin-top: 360px !important;
+       }
+}
 
 
 
